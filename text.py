@@ -77,7 +77,6 @@ class RenderIter:
         # Return line lenghts in characters including the newline, if any.
         return (self.pos - p, cont, self.txt[p:self.pos].rstrip('\n').expandtabs(self.tab_width))
 
-
 class TextIter:
     # FIXME: Continuation lines will not work correctly with tabs. See test3.c.
     """ Go to virtual line end or beginning. """
